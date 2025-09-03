@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+class det
+{
+    public:
+    int sum,product;
+    det();
+    det(double a,double b);
+    det(int a,int b);
+    
+    void display1();
+     void display2();
+};
+det::det(double a,double b)
+{
+  sum=a+b;
+}
+det::det(int a,int b)
+{
+  product=a*b;
+}
+
+void det::display1()
+{
+    cout<<"Sum: "<<sum<<endl;
+    
+    
+    
+}
+void det::display2()
+{
+    
+    cout<<"Product "<<product<<endl;
+   
+    
+}
+int main()
+{
+    det d1(2.5,3.5);
+    
+    d1.display1();
+    det d2(3,4);
+     d2.display2();
+}
