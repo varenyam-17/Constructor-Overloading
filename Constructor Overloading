@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace std;
+class det
+{
+    public:
+    string name,desig,name1,desig1;
+    int age1,salary1;
+    det();
+    det(string name,string desig);
+    det(int age,int salary);
+    
+    void display1();
+     void display2();
+};
+det::det(string name,string desig)
+{
+  cout<<"Enter name"<<endl;
+  cin>>name1;
+  cout<<"Enter Designation"<<endl;
+  cin>>desig1;
+}
+det::det(int age,int salary)
+{
+  cout<<"Enter age"<<endl;
+  cin>>age1;
+  cout<<"Enter salary"<<endl;
+  cin>>salary1;
+}
+
+void det::display1()
+{
+    cout<<"Name: "<<name1<<endl;
+    cout<<"Designatio:"<<desig1<<endl;
+    
+    
+}
+void det::display2()
+{
+    
+    cout<<"Age: "<<age1<<endl;
+    cout<<"Salary: "<<salary1<<endl;
+    
+}
+int main()
+{
+    det d1("","");
+    det d2(0,0);
+    d1.display1();
+    d2.display2();
+}
